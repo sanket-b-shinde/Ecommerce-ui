@@ -1,0 +1,70 @@
+/* Full page gradient background */
+.login-wrapper {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  animation: gradientBG 6s ease infinite;
+  background-size: 200% 200%;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Card styling */
+.login-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.login-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Gradient heading text */
+.text-gradient {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Input fields */
+.form-control-lg {
+  border-radius: 12px;
+  padding: 14px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.form-control-lg:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 8px rgba(102, 126, 234, 0.5);
+}
+
+/* Login button with gradient */
+.btn-login {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-login:hover {
+  background: linear-gradient(135deg, #764ba2, #667eea);
+  transform: scale(1.05);
+}
+
+/* Sign up link */
+.link-signup {
+  color: #667eea;
+  text-decoration: none;
+}
+
+.link-signup:hover {
+  text-decoration: underline;
+}
