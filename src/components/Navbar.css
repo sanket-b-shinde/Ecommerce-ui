@@ -32,7 +32,7 @@
   transform: translateX(-50%);
   width: 0;
   height: 2px;
-  background: #fff;
+  /* background: #fff; */
   transition: width 0.3s ease;
 }
 .nav-link:hover::after {

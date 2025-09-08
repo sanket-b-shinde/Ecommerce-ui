@@ -1,0 +1,64 @@
+/* Background with gradient */
+.orders-page {
+  min-height: 100vh;
+  /* background: linear-gradient(135deg, #1e3c72, #2a5298); */
+  animation: gradientShift 8s ease infinite alternate;
+}
+
+@keyframes gradientShift {
+  0% {
+    /* background: linear-gradient(135deg, #1e3c72, #2a5298); */
+  }
+  100% {
+    /* background: linear-gradient(135deg, #2a5298, #1e3c72); */
+  }
+}
+
+/* Card styling */
+.order-card {
+  background: linear-gradient(145deg, #ffffff, #f3f3f3);
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.order-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Image animation */
+.order-img {
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.order-card:hover .order-img {
+  transform: scale(1.1);
+}
+
+/* Buttons */
+.btn-creative {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  border: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-creative:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  transform: scale(1.05);
+}
+
+.btn-creative-dark {
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+  border: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-creative-dark:hover {
+  background: linear-gradient(135deg, #dd2476, #ff512f);
+  transform: scale(1.05);
+}
