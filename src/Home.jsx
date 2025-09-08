@@ -1,12 +1,13 @@
 import { Button, Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom"; // If you're using routing
+import BrandSlider from "./components/BrandSlider";
 
 function Home() {
   const slideHeight = "360px"; // Decreased height
 
   // Sample categories — update image paths or URLs accordingly
   const categories = [
-    { name: "Ethnic Wear", img: "https://images.meesho.com/images/marketing/1744634654837.webp", link: "/Ethnic" },
+    { name: "Ethnic Wear", img: "https://images.meesho.com/images/marketing/1744634654837.webp", link: "/ethnic" },
     { name: "Western Dresses", img: "https://images.meesho.com/images/marketing/1744634725496.webp", link: "/western" },
     { name: "Menswear", img: "https://images.meesho.com/images/marketing/1744634780426.webp", link: "/menswear" },
     { name: "Footwear", img: "https://images.meesho.com/images/marketing/1744634814643.webp", link: "/footwear" },
@@ -199,9 +200,10 @@ function Home() {
   </style>
 </div>
 
-
+<BrandSlider/>
 
     </div>
+    
   );
 }
 
