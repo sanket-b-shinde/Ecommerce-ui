@@ -6,6 +6,7 @@ import Home from './Home.jsx';
 import Categories from './components/Categories.jsx';
 import Signup from './Signup.jsx';
 
+
 export default function App() {
   return (
     <>
@@ -21,6 +22,8 @@ export default function App() {
           <Route path="/profile" element={<h2>Profile</h2>} />
           <Route path="/login" element={<h2><Login/></h2>} />
           <Route path="/signup" element={<h2><Signup/></h2>} />
+                 
+
         </Routes>
       </div>
       {/* <Products/> */}
